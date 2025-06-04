@@ -14,7 +14,7 @@
           width="400"
           height="{{ 400 | divided_by: section.settings.main_image.aspect_ratio | round }}"
           loading="lazy"
-          class="tw-w-full tw-h-64 lg:tw-h-96 lg:tw-w-[400px] tw-h-auto tw-object-contain"
+          class="tw-w-full tw-h-48 lg:tw-h-96 lg:tw-w-[400px] tw-h-auto tw-object-contain"
         >
       </div>
     {% endif %}
@@ -34,14 +34,14 @@
             width="150"
             height="{{ 150 | divided_by: section.settings.secondary_image.aspect_ratio | round }}"
             loading="lazy"
-            class="secondary-image tw-w-[50px] lg:tw-w-[75px] xl:tw-w-[75px] tw-h-auto tw-object-contain"
+            class="tw-z-0 secondary-image tw-w-[35px] lg:tw-w-[75px] xl:tw-w-[75px] tw-h-auto tw-object-contain"
           >
         </div>
       {% endif %}
       
-      <h1 id="feature-heading" class="feature-heading {% if section.settings.indent == true %}has-indent{% endif %} {% if section.settings.indent == true %}tw-text-left{% elsif section.settings.justify_text == true %}tw-text-justify{% else %}{% if section.settings.right_text %}tw-text-left{% else %}tw-text-center{% endif %}{% endif %} {% if section.settings.small_text == true %}h2{% endif %}">
+      <h2 id="feature-heading" class="feature-heading {% if section.settings.indent == true %}has-indent{% endif %} {% if section.settings.indent == true %}tw-text-left{% elsif section.settings.justify_text == true %}tw-text-justify{% else %}{% if section.settings.right_text %}tw-text-left{% else %}tw-text-center{% endif %}{% endif %} {% if section.settings.small_text == true %}h2{% endif %}">
         {{ section.settings.feature_heading | replace: '<i>', '<i class="animate-word">' }}
-      </h1>
+      </h2>
     </div>
   </div>
 </div>
@@ -63,13 +63,13 @@
   
   /* Apply text indent when enabled */
   .feature-heading.has-indent {
-    text-indent: 100px !important;
+    text-indent: 55px !important;
     /* Text indent only works with left or justify alignment */
   }
   
   @media (min-width: 1024px) {
     .feature-heading.has-indent {
-      text-indent: 200px !important;
+      text-indent: 140px !important;
     }
   }
   
@@ -86,7 +86,7 @@
   
   @media (min-width: 1024px) {
     .feature-heading.has-indent.text-justify {
-      text-indent: 200px !important;
+      text-indent: 100px !important;
     }
   }
   
@@ -96,7 +96,7 @@
   
   @media (min-width: 1024px) {
     .secondary-image-wrapper {
-      transform: translateX(30px) translateY(10px);
+
     }
   }
   
