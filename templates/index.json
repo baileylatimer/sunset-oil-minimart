@@ -3,19 +3,25 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
-        "logo_4AeNBU": {
-          "type": "logo",
-          "name": "t:names.logo",
+        "text_g7JjYi": {
+          "type": "text",
+          "name": "t:names.heading",
           "settings": {
-            "inverse": false,
-            "font": "accent",
-            "unit": "percent",
-            "percent_width": 50,
-            "pixel_height": 96,
-            "custom_mobile_size": true,
-            "unit_mobile": "pixel",
-            "percent_width_mobile": 100,
-            "pixel_height_mobile": 40,
+            "text": "<h1>Open<\/h1>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -23,13 +29,13 @@
           },
           "blocks": {}
         },
-        "text_iXYWz6": {
+        "text_Dir7eY": {
           "type": "text",
-          "name": "t:names.text",
+          "name": "t:names.heading",
           "settings": {
-            "text": "<p>With a focus on quality and design, we curate products that enhance your everyday.<\/p>",
+            "text": "<h1>24\/7<\/h1>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
@@ -51,14 +57,15 @@
         }
       },
       "block_order": [
-        "logo_4AeNBU",
-        "text_iXYWz6"
+        "text_g7JjYi",
+        "text_Dir7eY"
       ],
       "name": "t:names.hero",
       "settings": {
         "link": "",
         "open_in_new_tab": false,
         "media_type_1": "image",
+        "image_1": "shopify:\/\/shop_images\/hero-temp.jpg",
         "media_type_2": "image",
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -82,12 +89,24 @@
         "padding-block-end": 48
       }
     },
+    "v2_feature_text_PpnfRr": {
+      "type": "v2-feature-text",
+      "name": "Feature Text",
+      "settings": {
+        "feature_heading": "What started as a West Hollywood gas station became an underground icon—one hat at a time. No billboards. No branding teams. Just local legend, stitched and sold behind pump three.",
+        "main_image": "shopify:\/\/shop_images\/gas-station-pump.png",
+        "secondary_image": "shopify:\/\/shop_images\/bird-logo.png",
+        "indent": true,
+        "right_text": true,
+        "justify_text": false,
+        "small_text": false
+      }
+    },
     "product_list_qU3bEB": {
       "type": "product-list",
       "blocks": {
         "static-header": {
           "type": "_product-list-content",
-          "disabled": true,
           "static": true,
           "settings": {
             "content_direction": "row",
@@ -123,7 +142,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}<\/h3>",
+                "text": "<h2>The Hats<\/h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -152,7 +171,7 @@
                 "label": "View all",
                 "collection": "{{ closest.collection }}",
                 "open_in_new_tab": false,
-                "style_class": "button-secondary",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -346,24 +365,30 @@
         "testimonial_NqrYAa": {
           "type": "testimonial",
           "settings": {
-            "quote": "STATELY'S BEEN A GAME-CHANGER. FOUR BOXES IN, NOT A SINGLE MISS. I LOOK AND FEEL GREAT - THANKS NATALIE!",
-            "instagram_handle": "",
+            "image": "shopify:\/\/shop_images\/saquon-post.jpg",
+            "profile_image": "shopify:\/\/shop_images\/saquon-pfp_e626300a-d012-4df6-9a5b-e2824f27915b.jpg",
+            "quote": "",
+            "instagram_handle": "saquon",
             "size": "medium"
           }
         },
         "testimonial_q6z4Dt": {
           "type": "testimonial",
           "settings": {
-            "quote": "STATELY'S BEEN A GAME-CHANGER. FOUR BOXES IN, NOT A SINGLE MISS. I LOOK AND FEEL GREAT - THANKS NATALIE!",
-            "instagram_handle": "",
+            "image": "shopify:\/\/shop_images\/brooklyn-beckham-post.jpg",
+            "profile_image": "shopify:\/\/shop_images\/brooklyn-beckham-pfp.jpg",
+            "quote": "",
+            "instagram_handle": "brooklynpeltzbeckham",
             "size": "medium"
           }
         },
         "testimonial_bc37z7": {
           "type": "testimonial",
           "settings": {
-            "quote": "STATELY'S BEEN A GAME-CHANGER. FOUR BOXES IN, NOT A SINGLE MISS. I LOOK AND FEEL GREAT - THANKS NATALIE!",
-            "instagram_handle": "",
+            "image": "shopify:\/\/shop_images\/tony-hawk-post.jpg",
+            "profile_image": "shopify:\/\/shop_images\/tony-hawk-pfp.jpg",
+            "quote": "",
+            "instagram_handle": "tonyhawk",
             "size": "medium"
           }
         }
@@ -381,6 +406,7 @@
   },
   "order": [
     "hero_jVaWmY",
+    "v2_feature_text_PpnfRr",
     "product_list_qU3bEB",
     "v2_testimonials_gYMtty"
   ]
