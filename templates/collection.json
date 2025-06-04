@@ -8,7 +8,7 @@
           "name": "Collection title",
           "settings": {
             "text": "<p>{{ closest.collection.title }}<\/p>",
-            "width": "fit-content",
+            "width": "100%",
             "max_width": "normal",
             "alignment": "left",
             "type_preset": "h1",
@@ -267,7 +267,7 @@
       },
       "settings": {
         "layout_type": "grid",
-        "product_card_size": "medium",
+        "product_card_size": "large",
         "mobile_product_card_size": "small",
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
