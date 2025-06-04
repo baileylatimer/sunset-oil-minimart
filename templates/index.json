@@ -362,6 +362,16 @@
     "v2_testimonials_gYMtty": {
       "type": "v2-testimonials",
       "blocks": {
+        "testimonial_PPRpXV": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/zach-bryan-post_f683a0eb-fb2c-4a79-b2e1-ffb954eafe0d.jpg",
+            "profile_image": "shopify:\/\/shop_images\/zach-bryan-pfp.jpg",
+            "quote": "",
+            "instagram_handle": "zachlanebryan",
+            "size": "medium"
+          }
+        },
         "testimonial_NqrYAa": {
           "type": "testimonial",
           "settings": {
@@ -394,6 +404,7 @@
         }
       },
       "block_order": [
+        "testimonial_PPRpXV",
         "testimonial_NqrYAa",
         "testimonial_q6z4Dt",
         "testimonial_bc37z7"
