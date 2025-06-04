@@ -10,9 +10,9 @@
   --color-bg: #EDEAE4;
   --color-contrast-high: #171717;
   --color-contrast-higher: #000;
-  --font-body: 'Neue Montreal', serif;
-  --font-header: 'Neue Montreal', serif;
-  --font-button: 'Neue Montreal', serif;
+  --font-body: 'PP Fraktion Mono', serif;
+  --font-header: 'OT Neue Montreal', serif;
+  --font-button: 'PP Fraktion Mono', serif;
   
   /* Border radius values */
   --border-radius-sm: 8px;
@@ -54,20 +54,21 @@ body {
    ============================================ */
 
 @font-face {
-  font-family: 'Neue Montreal';
-  src: url('./NeueMontreal-Regular.otf') format('opentype');
+  font-family: 'PP Fraktion Mono';
+  src: url('./PPFraktionMono-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Neue Montreal';
-  src: url('./NeueMontreal-Medium.otf') format('opentype');
-  font-weight: 500;
+  font-family: 'OT Neue Montreal';
+  src: url('./OTNeueMontreal-SemiBoldSqueezed.otf') format('opentype');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
+
 
 /* ============================================
    2. CUSTOM FONT PROPERTIES
@@ -75,13 +76,14 @@ body {
 
 :root {
   /* Primary Font Definitions */
-  --font-header: 'Neue Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-body: 'Neue Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-button: 'Neue Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-header: 'OT Neue Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-body: 'PP Fraktion Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-button: 'PP Fraktion Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   
   /* Font Weight Definitions */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
 }
 
 /* ============================================
@@ -98,12 +100,12 @@ body {
   --font-h6--family: var(--font-header);
   
   /* Override Heading Font Weights */
-  --font-h1--weight: var(--font-weight-medium);
-  --font-h2--weight: var(--font-weight-medium);
-  --font-h3--weight: var(--font-weight-medium);
-  --font-h4--weight: var(--font-weight-medium);
-  --font-h5--weight: var(--font-weight-medium);
-  --font-h6--weight: var(--font-weight-medium);
+  --font-h1--weight: var(--font-weight-semibold);
+  --font-h2--weight: var(--font-weight-semibold);
+  --font-h3--weight: var(--font-weight-semibold);
+  --font-h4--weight: var(--font-weight-semibold);
+  --font-h5--weight: var(--font-weight-semibold);
+  --font-h6--weight: var(--font-weight-semibold);
   
   /* Override Body/Paragraph Font */
   --font-paragraph--family: var(--font-body);
@@ -113,7 +115,7 @@ body {
   --font-body-family: var(--font-body);
   --font-body-weight: var(--font-weight-regular);
   --font-heading-family: var(--font-header);
-  --font-heading-weight: var(--font-weight-medium);
+  --font-heading-weight: var(--font-weight-semibold);
 }
 
 /* ============================================
@@ -124,10 +126,11 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6, jumbo-text, .ready {
   font-family: var(--font-header) !important;
-  font-weight: var(--font-weight-medium) !important;
+  font-weight: var(--font-weight-semibold) !important;
   font-feature-settings: 'liga' 1, 'kern' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
 }
 
 /* Body Text */
@@ -136,24 +139,28 @@ body {
   font-weight: var(--font-weight-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
 }
 
 /* Paragraphs */
 p {
   font-family: var(--font-body);
   font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
 }
 
 /* Links */
 a {
   font-family: var(--font-body);
   font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
 }
 
 /* Strong/Bold Text within Body Content */
 p strong, p b, 
 a strong, a b {
   font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
 }
 
 /* ============================================
@@ -234,6 +241,10 @@ nav a,
   font-family: var(--font-header) !important;
 }
 
+.font-semibold {
+  font-weight: var(--font-weight-semibold) !important;
+}
+
 /* ============================================
    9. SPECIAL COMPONENTS
    ============================================ */
@@ -243,7 +254,7 @@ nav a,
 .card__heading,
 .product-card__title {
   font-family: var(--font-header);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
 }
 
 /* Price Display */
