@@ -168,6 +168,8 @@ a strong, a b {
   text-transform: uppercase;
 }
 
+
+
 /* ============================================
    5. BUTTON STYLES
    ============================================ */
@@ -289,6 +291,8 @@ nav a,
   }
 }
 
+
+
 /* ============================================
    11. PRINT STYLES
    ============================================ */
@@ -320,6 +324,11 @@ h2 {
   line-height: var(--font-h2--line-height) !important;
   letter-spacing: var(--font-h2--letter-spacing) !important;
 }
+@media screen and (max-width: 749px) {
+  h2 {
+   font-size: 38px !important;
+  }
+ }
 
 h3 {
   font-size: var(--font-h3--size) !important;
