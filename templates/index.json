@@ -99,7 +99,8 @@
         "indent": true,
         "right_text": true,
         "justify_text": false,
-        "small_text": false
+        "small_text": false,
+        "jumbo_text": false
       }
     },
     "product_list_qU3bEB": {
@@ -413,20 +414,12 @@
       "settings": {
         "title": "As Seen on #SunsetOil"
       }
-    },
-    "v2_footer_bQcDXa": {
-      "type": "v2-footer",
-      "name": "V2 Footer",
-      "settings": {
-        "color_scheme": ""
-      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "v2_feature_text_PpnfRr",
     "product_list_qU3bEB",
-    "v2_testimonials_gYMtty",
-    "v2_footer_bQcDXa"
+    "v2_testimonials_gYMtty"
   ]
 }

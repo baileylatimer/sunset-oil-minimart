@@ -313,7 +313,7 @@ nav a,
    ============================================ */
 
 /* Preserve Horizon theme heading sizes from Tailwind reset */
-h1 {
+h1, .h1 {
   font-size: var(--font-h1--size) !important;
   line-height: var(--font-h1--line-height) !important;
   letter-spacing: var(--font-h1--letter-spacing) !important;

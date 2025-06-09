@@ -39,7 +39,7 @@
         </div>
       {% endif %}
       
-      <h2 id="feature-heading" class="feature-heading {% if section.settings.indent == true %}has-indent{% endif %} {% if section.settings.indent == true %}tw-text-left{% elsif section.settings.justify_text == true %}tw-text-justify{% else %}{% if section.settings.right_text %}tw-text-left{% else %}tw-text-center{% endif %}{% endif %} {% if section.settings.small_text == true %}h2{% endif %}">
+      <h2 id="feature-heading" class="feature-heading {% if section.settings.indent == true %}has-indent{% endif %} {% if section.settings.indent == true %}tw-text-left{% elsif section.settings.justify_text == true %}tw-text-justify{% else %}{% if section.settings.right_text %}tw-text-left{% else %}tw-text-center{% endif %}{% endif %} {% if section.settings.small_text == true %}h2{% endif %}{% if section.settings.jumbo_text == true %} jumbo-h2{% endif %}">
         {{ section.settings.feature_heading | replace: '<i>', '<i class="animate-word">' }}
       </h2>
     </div>
@@ -47,6 +47,17 @@
 </div>
 
 <style>
+  .jumbo-h2 {
+    font-size: 60px !important;
+    line-height: 52px !important;
+  }
+
+  @media (min-width: 1024px) {
+  .jumbo-h2 {
+    font-size: 110px !important;
+    line-height: 102px !important;
+  }
+  }
   .feature-text-section {
     position: relative;
   }
@@ -155,6 +166,11 @@
       "type": "checkbox",
       "id": "small_text",
       "label": "Small Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "jumbo_text",
+      "label": "Jumbo Text"
     }
   ],
   "presets": [
