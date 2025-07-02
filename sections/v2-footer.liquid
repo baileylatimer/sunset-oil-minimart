@@ -8,7 +8,7 @@
     <!-- Desktop Version -->
     <div class="desktop tw-hidden md:tw-block font-secondary">
       <!-- Top Row -->
-      <div class="flex justify-start items-center whitespace-nowrap footer-row">
+      <div class="tw-flex justify-start items-center whitespace-nowrap footer-row">
         <!-- Diamond W Logo -->
         <span class="diamond-w-wrapper">
           {% render 'svg-diamond-w', class: 'diamond-w-icon' %}
@@ -31,7 +31,7 @@
       </div>
       
       <!-- Bottom Row -->
-      <div class="flex justify-start items-center whitespace-nowrap footer-row">
+      <div class="tw-flex justify-start items-center whitespace-nowrap footer-row">
         <h2>PUMPING GAS SINCE</h2>
         <span class="year-96-wrapper mx-2">
           {% render 'svg-96', class: 'year-96-icon' %}
@@ -47,7 +47,7 @@
     <!-- Mobile Version - Simplified -->
     <div class="mobile md:hidden font-secondary">
       <div class="flex flex-col">
-        <div class="footer-row mb-2 flex items-center">
+        <div class="footer-row mb-2 tw-flex items-center">
           <span class="diamond-w-wrapper diamond-w-wrapper-mobile">
             {% render 'svg-diamond-w', class: 'diamond-w-icon diamond-w-icon-mobile' %}
           </span>
@@ -57,21 +57,21 @@
           </span>
         
         </div>
-        <div class="footer-row mb-2 flex items-center">
+        <div class="footer-row mb-2 tw-flex items-center">
           <h2 class="tw-ml-2 h2">W SUNSET BLVD</h2>
           <span class="star-wrapper mr-1">
             {% render 'svg-star', class: 'star-icon star-icon-mobile' %}
           </span>
           <h2>WEST HOLLYWOOD</h2>
         </div>
-        <div class="footer-row  flex items-center">
+        <div class="footer-row  tw-flex items-center">
        
           <span class="ca-state-wrapper">
             {% render 'svg-ca-state', class: 'ca-state-icon ca-state-icon-mobile' %}
           </span>
           <h2 class="text-sm tw-ml-2 ">PUMPING GAS SINCE 96</h2>
         </div>
-        <div class="footer-row flex items-center">
+        <div class="footer-row tw-flex items-center">
           <h2 class="text-sm ">PUSHING CULTURE UNTIL</h2>
           <span class="tw-ml-2 infinity-wrapper ml-1">
             {% render 'svg-infinity', class: 'infinity-icon infinity-icon-mobile' %}
@@ -87,7 +87,7 @@
   "name": "V2 Footer",
   "tag": "section",
   "class": "v2-footer-wrapper",
-  "settings": [
+  "settings": [ 
     {
       "type": "color_scheme",
       "id": "color_scheme",
@@ -102,12 +102,12 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %} 
 
 <style>
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 749px) { 
     .v2-footer h2 {
-      font-size: 25px !important ;
+      font-size: 25px !important;
     }
 
     .v2-footer svg {
