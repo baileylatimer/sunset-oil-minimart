@@ -350,19 +350,32 @@
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
+        "max_products": 10,
+        "columns": 5,
         "mobile_columns": "2",
         "columns_gap": 4,
         "rows_gap": 24,
         "icons_style": "arrow",
         "icons_shape": "none",
-        "section_width": "page-width",
+        "section_width": "full-width",
         "horizontal_alignment": "center",
         "gap": 40,
         "color_scheme": "scheme-1",
         "padding-block-start": 48,
-        "padding-block-end": 96
+        "padding-block-end": 0
+      }
+    },
+    "about_section_nAHeCe": {
+      "type": "about-section",
+      "name": "About Section",
+      "settings": {
+        "heading": "What started as a West Hollywood gas station became an underground icon—one hat at a time. No billboards. No branding teams. Just local legend, stitched and sold behind pump three.",
+        "button_label": "OUR STORY",
+        "button_link": "shopify:\/\/pages\/our-story",
+        "vinyl_image": "shopify:\/\/shop_images\/gas-station-pump.png",
+        "vinyl_alt_text": "",
+        "rotation_speed": 30,
+        "full_width": true
       }
     },
     "v2_testimonials_gYMtty": {
@@ -418,19 +431,6 @@
       "name": "Testimonials",
       "settings": {
         "title": "As Seen on #SunsetOil"
-      }
-    },
-    "about_section_nAHeCe": {
-      "type": "about-section",
-      "name": "About Section",
-      "settings": {
-        "heading": "What started as a West Hollywood gas station became an underground icon—one hat at a time. No billboards. No branding teams. Just local legend, stitched and sold behind pump three.",
-        "button_label": "OUR STORY",
-        "button_link": "shopify:\/\/pages\/our-story",
-        "vinyl_image": "shopify:\/\/shop_images\/gas-station-pump.png",
-        "vinyl_alt_text": "",
-        "rotation_speed": 30,
-        "full_width": true
       }
     }
   },

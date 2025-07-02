@@ -15,6 +15,7 @@
         "divider_hFm3am": {
           "type": "_divider",
           "name": "t:names.divider",
+          "disabled": true,
           "settings": {
             "thickness": 1,
             "corner_radius": "square",
@@ -27,6 +28,7 @@
         "group_tbFfTQ": {
           "type": "group",
           "name": "Join the club",
+          "disabled": true,
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -281,7 +283,6 @@
         "group_tbFfTQ",
         "footer_utilities_KRaGcH"
       ],
-      "disabled": true,
       "name": "Footer",
       "settings": {
         "content_direction": "column",
