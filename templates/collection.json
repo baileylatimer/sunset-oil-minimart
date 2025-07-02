@@ -7,7 +7,7 @@
           "type": "text",
           "name": "Collection title",
           "settings": {
-            "text": "<p>{{ closest.collection.title }}<\/p>",
+            "text": "<h2>The Hats<\/h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -32,6 +32,7 @@
         "text_twGGkJ": {
           "type": "text",
           "name": "t:names.text",
+          "disabled": true,
           "settings": {
             "text": "{{ closest.collection.description }}",
             "width": "fit-content",
@@ -269,7 +270,7 @@
         "layout_type": "grid",
         "product_card_size": "large",
         "mobile_product_card_size": "small",
-        "product_grid_width": "centered",
+        "product_grid_width": "full-width",
         "full_width_on_mobile": true,
         "columns_gap_horizontal": 4,
         "columns_gap_vertical": 16,
