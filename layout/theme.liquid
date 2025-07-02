@@ -38,6 +38,7 @@
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+    <div class="noise"></div>
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
       {% sections 'header-group' %}
@@ -66,7 +67,13 @@
       {% render 'quick-add-modal' %}
     {% endif %}
     
-    {% comment %} Custom JavaScript Bundle with GSAP {% endcomment %}
+    {% comment %} GSAP Core and Plugins {% endcomment %}
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/SplitText.min.js" defer></script>
+    
+    {% comment %} Custom JavaScript Bundle with GSAP animations {% endcomment %}
     <script src="{{ 'bundle.js' | asset_url }}" defer></script>
   </body>
 </html>

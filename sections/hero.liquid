@@ -86,6 +86,23 @@
     overflow: hidden;
   }
 
+  .hero__video deferred-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__video deferred-media video,
+  .hero__video deferred-media iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
   .hero__link {
     position: absolute;
     inset: 0;
@@ -192,11 +209,19 @@
   if section.settings.image_2 != blank and media_type_2 == 'image'
     assign has_image_2 = true
   endif
-  if section.settings.video_1 != blank and media_type_1 == 'video'
-    assign has_video_1 = true
+  if media_type_1 == 'video'
+    if section.settings.video_source_1 == 'file' and section.settings.video_file_url_1 != blank
+      assign has_video_1 = true
+    elsif section.settings.video_source_1 == 'upload' and section.settings.video_1 != blank
+      assign has_video_1 = true
+    endif
   endif
-  if section.settings.video_2 != blank and media_type_2 == 'video'
-    assign has_video_2 = true
+  if media_type_2 == 'video'
+    if section.settings.video_source_2 == 'file' and section.settings.video_file_url_2 != blank
+      assign has_video_2 = true
+    elsif section.settings.video_source_2 == 'upload' and section.settings.video_2 != blank
+      assign has_video_2 = true
+    endif
   endif
 
   if has_image_1 or has_image_2
@@ -237,16 +262,27 @@
 
   {%- if has_video_1 -%}
     {% assign media_count = media_count | plus: 1 %}
-    {{
-      section.settings.video_1
-      | video_tag:
-        image_size: '3840x',
-        autoplay: true,
-        loop: true,
-        controls: false,
-        muted: true,
-        class: 'hero__video'
-    }}
+    {% if section.settings.video_source_1 == 'file' %}
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; z-index: var(--layer-base);"
+      >
+        <source src="{{ section.settings.video_file_url_1 }}" type="video/mp4">
+      </video>
+    {% else %}
+      {% render 'video',
+        video: section.settings.video_1,
+        video_class: 'hero__video',
+        video_autoplay: true,
+        video_loop: true,
+        disable_controls: true,
+        video_style: 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; z-index: var(--layer-base);'
+      %}
+    {% endif %}
   {%- endif -%}
 
   {%- if has_image_2 -%}
@@ -266,16 +302,27 @@
 
   {%- if has_video_2 -%}
     {% assign media_count = media_count | plus: 1 %}
-    {{
-      section.settings.video_2
-      | video_tag:
-        image_size: '3840x',
-        autoplay: true,
-        loop: true,
-        controls: false,
-        muted: true,
-        class: 'hero__video'
-    }}
+    {% if section.settings.video_source_2 == 'file' %}
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; z-index: var(--layer-base);"
+      >
+        <source src="{{ section.settings.video_file_url_2 }}" type="video/mp4">
+      </video>
+    {% else %}
+      {% render 'video',
+        video: section.settings.video_2,
+        video_class: 'hero__video',
+        video_autoplay: true,
+        video_loop: true,
+        disable_controls: true,
+        video_style: 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; z-index: var(--layer-base);'
+      %}
+    {% endif %}
   {%- endif -%}
 
   {% if has_media == false and is_transparent %}
@@ -478,7 +525,31 @@
       "type": "video",
       "id": "video_1",
       "label": "t:settings.video",
+      "visible_if": "{{ section.settings.media_type_1 == 'video' and section.settings.video_source_1 == 'upload' }}"
+    },
+    {
+      "type": "select",
+      "id": "video_source_1",
+      "label": "Video source",
+      "options": [
+        {
+          "value": "upload",
+          "label": "Upload video"
+        },
+        {
+          "value": "file",
+          "label": "File URL"
+        }
+      ],
+      "default": "upload",
       "visible_if": "{{ section.settings.media_type_1 == 'video' }}"
+    },
+    {
+      "type": "url",
+      "id": "video_file_url_1",
+      "label": "Video file URL",
+      "info": "Upload your video to Content > Files and paste the URL here",
+      "visible_if": "{{ section.settings.media_type_1 == 'video' and section.settings.video_source_1 == 'file' }}"
     },
     {
       "type": "header",
@@ -510,7 +581,31 @@
       "type": "video",
       "id": "video_2",
       "label": "t:settings.video",
+      "visible_if": "{{ section.settings.media_type_2 == 'video' and section.settings.video_source_2 == 'upload' }}"
+    },
+    {
+      "type": "select",
+      "id": "video_source_2",
+      "label": "Video source",
+      "options": [
+        {
+          "value": "upload",
+          "label": "Upload video"
+        },
+        {
+          "value": "file",
+          "label": "File URL"
+        }
+      ],
+      "default": "upload",
       "visible_if": "{{ section.settings.media_type_2 == 'video' }}"
+    },
+    {
+      "type": "url",
+      "id": "video_file_url_2",
+      "label": "Video file URL",
+      "info": "Upload your video to Content > Files and paste the URL here",
+      "visible_if": "{{ section.settings.media_type_2 == 'video' and section.settings.video_source_2 == 'file' }}"
     },
     {
       "type": "header",
