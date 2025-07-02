@@ -676,7 +676,16 @@ padding: .5em .5em 1.5em .5em !important;
 }
 
 
-media-gallery .product-media-container {
+media-gallery .product-media-container, .cart-items__media-image {
   filter: brightness(.95) ;
   -webkit-filter: brightness(.95) ;
+}
+
+.cart-discount__label, .cart__total-value, .cart__total-label, .cart-items__price {
+  font-family: var(--font-body) !important;
+  font-weight: 400 !important;
+}
+
+.cart__total-value {
+  font-size: var(--cart-font-size--sm) !important;
 }
