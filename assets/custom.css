@@ -559,9 +559,6 @@ select::after:active {
 }
 
 
-.product-media {
-  filter: brightness(.85) sepia(.08);
-}
 
 
 .noise {
@@ -626,3 +623,29 @@ select::after:active {
    transform:translate3d(-7rem,0,0)
   }
  }
+
+
+ /* .resource-list__item {
+  height: 100%;
+  color: var(--color-foreground);
+  text-decoration: none;
+  padding: 2em;
+  border: 1px solid black;
+}
+
+.resource-list--grid {
+  display: grid;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
+  grid-template-columns: var(--resource-list-columns-mobile);
+}
+
+
+.product-media {
+  filter: brightness(.91) sepia(.08);
+  -webkit-filter: brightness(.91) sepia(.08);
+} */
+.product-media {
+  filter: brightness(.85) sepia(.08);
+  -webkit-filter: brightness(.85) sepia(.08);
+}
