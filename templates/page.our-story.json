@@ -52,7 +52,7 @@
       "type": "v2-feature-text",
       "name": "Feature Text",
       "settings": {
-        "feature_heading": "Since ’96, our hats have been a quiet staple of West Hollywood culture—starting at a humble gas station and worn by those who know it’s not about the brand, but about the story.",
+        "feature_heading": "Our hats have been a quiet staple of West Hollywood culture—starting at a humble gas station and worn by those who know it’s not about the brand, but about the story.",
         "indent": false,
         "right_text": false,
         "justify_text": true,
