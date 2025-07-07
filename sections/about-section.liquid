@@ -19,34 +19,25 @@
     align-items: center;
     justify-content: center;
     min-height: 600px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .vinyl-section__vinyl-wrapper {
     position: absolute;
     left: -0%;
     bottom: 0%;
-    width: 70%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 800px;
-  }
-
-  .vinyl-section__vinyl {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
     animation: vinyl-rotate var(--rotation-speed, 30s) linear infinite;
-  }
-
-  @keyframes vinyl-rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   /* Right column - Content */
@@ -89,10 +80,6 @@
     background-color: #333;
   }
 
-  .vinyl-section img {
-    z-index: 20;
-  }
-
   /* Mobile styles */
   @media screen and (max-width: 749px) {
     .vinyl-section {
@@ -116,15 +103,11 @@
       left: -5% !important;
       width: 110%;
     }
-
-    .vinyl-section__vinyl {
-      /* max-width: 400px; */
-    }
   }
 
   /* Reduce motion preference */
   @media (prefers-reduced-motion: reduce) {
-    .vinyl-section__vinyl {
+    .vinyl-section__vinyl-wrapper {
       animation: none;
     }
   }
@@ -132,27 +115,13 @@
 
 <section class="vinyl-section" style="--rotation-speed: {{ section.settings.rotation_speed }}s;">
   <!-- Left Column - Vinyl -->
-  <div class="vinyl-section__column vinyl-section__vinyl-column">
-    <div class="vinyl-section__vinyl-wrapper">
-      {% if section.settings.vinyl_image != blank %}
-        {{ section.settings.vinyl_image | image_url: width: 1300 | image_tag:
-          alt: section.settings.vinyl_alt_text | default: section.settings.vinyl_image.alt | default: 'Rotating vinyl disk',
-          class: 'vinyl-section__vinyl',
-          width: 600,
-          height: 600,
-          loading: 'lazy'
-        }}
-      {% else %}
-        <img 
-          src="{{ 'vinyl-disk.png' | asset_url }}" 
-          alt="{{ section.settings.vinyl_alt_text | default: 'Rotating vinyl disk' }}"
-          class="vinyl-section__vinyl"
-          width="600"
-          height="600"
-          loading="lazy"
-        >
-      {% endif %}
-    </div>
+  <div class="vinyl-section__column vinyl-section__vinyl-column"
+  
+  style="background-image: url('{% if section.settings.vinyl_image != blank %}{{ section.settings.vinyl_image | image_url: width: 1300 }}{% else %}{{ 'vinyl-disk.png' | asset_url }}{% endif %}');"
+  role="img"
+  aria-label="{{ section.settings.vinyl_alt_text | default: section.settings.vinyl_image.alt | default: 'Rotating vinyl disk' }}"
+  >
+
   </div>
 
   <!-- Right Column - Content -->
