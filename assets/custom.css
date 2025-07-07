@@ -689,3 +689,11 @@ media-gallery .product-media-container, .cart-items__media-image {
 .cart__total-value {
   font-size: var(--cart-font-size--sm) !important;
 }
+
+.button {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}

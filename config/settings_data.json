@@ -78,7 +78,7 @@
           "primary_hover": "#000000",
           "border": "#0000000f",
           "shadow": "#000000",
-          "primary_button_background": "#28282a",
+          "primary_button_background": "#000000",
           "primary_button_text": "#edeae4",
           "primary_button_border": "#28282a",
           "primary_button_hover_background": "#000000",

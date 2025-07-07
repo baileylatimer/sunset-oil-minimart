@@ -111,8 +111,24 @@
     "product_list_qU3bEB": {
       "type": "product-list",
       "blocks": {
+        "button_pfTPAe": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "View all",
+            "link": "shopify:\/\/collections\/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
         "static-header": {
           "type": "_product-list-content",
+          "disabled": true,
           "static": true,
           "settings": {
             "content_direction": "row",
@@ -147,6 +163,7 @@
             "product_list_text_qLCTNF": {
               "type": "_product-list-text",
               "name": "t:names.collection_title",
+              "disabled": true,
               "settings": {
                 "text": "<h2>The Hats<\/h2>",
                 "width": "fit-content",
@@ -345,6 +362,9 @@
           ]
         }
       },
+      "block_order": [
+        "button_pfTPAe"
+      ],
       "name": "t:names.products_grid",
       "settings": {
         "collection": "all",
