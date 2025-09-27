@@ -1,5 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "marquee_YP4iRf": {
+      "type": "marquee",
+      "blocks": {
+        "text_eAgtVF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FREE SHIPPING ON ALL DOMESTIC ORDERS </p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_eAgtVF"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
@@ -7,7 +57,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>Open<\/h1>",
+            "text": "<h1>Open</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -33,7 +83,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>24\/7<\/h1>",
+            "text": "<h1>24/7</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -65,9 +115,9 @@
         "link": "",
         "open_in_new_tab": false,
         "media_type_1": "video",
-        "image_1": "shopify:\/\/shop_images\/hero-temp.jpg",
+        "image_1": "shopify://shop_images/hero-temp.jpg",
         "video_source_1": "file",
-        "video_file_url_1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/12fba3d5dca448cf95839521e219ec19.mp4",
+        "video_file_url_1": "https://cdn.shopify.com/videos/c/o/v/12fba3d5dca448cf95839521e219ec19.mp4",
         "media_type_2": "image",
         "video_source_2": "upload",
         "video_file_url_2": "",
@@ -93,21 +143,6 @@
         "padding-block-end": 0
       }
     },
-    "v2_feature_text_PpnfRr": {
-      "type": "v2-feature-text",
-      "disabled": true,
-      "name": "Feature Text",
-      "settings": {
-        "feature_heading": "What started as a West Hollywood gas station became an underground icon—one hat at a time. No billboards. No branding teams. Just local legend, stitched and sold behind pump three.",
-        "main_image": "shopify:\/\/shop_images\/gas-station-pump.png",
-        "secondary_image": "shopify:\/\/shop_images\/bird-logo.png",
-        "indent": true,
-        "right_text": true,
-        "justify_text": false,
-        "small_text": false,
-        "jumbo_text": false
-      }
-    },
     "product_list_qU3bEB": {
       "type": "product-list",
       "blocks": {
@@ -116,7 +151,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "View all",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -165,7 +200,7 @@
               "name": "t:names.collection_title",
               "disabled": true,
               "settings": {
-                "text": "<h2>The Hats<\/h2>",
+                "text": "<h2>The Hats</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -391,8 +426,8 @@
       "settings": {
         "heading": "What started as a West Hollywood gas station became an underground icon—one hat at a time. No billboards. No branding teams. Just local legend, stitched and sold behind pump three.",
         "button_label": "OUR STORY",
-        "button_link": "shopify:\/\/pages\/our-story",
-        "vinyl_image": "shopify:\/\/shop_images\/IaaMG_4587.jpg",
+        "button_link": "shopify://pages/our-story",
+        "vinyl_image": "shopify://shop_images/IaaMG_4587.jpg",
         "vinyl_alt_text": "",
         "rotation_speed": 30,
         "full_width": true
@@ -404,8 +439,8 @@
         "testimonial_PPRpXV": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/zach-bryan-post_f683a0eb-fb2c-4a79-b2e1-ffb954eafe0d.jpg",
-            "profile_image": "shopify:\/\/shop_images\/zach-bryan-pfp.jpg",
+            "image": "shopify://shop_images/zach-bryan-post_f683a0eb-fb2c-4a79-b2e1-ffb954eafe0d.jpg",
+            "profile_image": "shopify://shop_images/zach-bryan-pfp.jpg",
             "quote": "",
             "instagram_handle": "zachlanebryan",
             "size": "medium"
@@ -414,8 +449,8 @@
         "testimonial_NqrYAa": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/saquon-post.jpg",
-            "profile_image": "shopify:\/\/shop_images\/saquon-pfp_e626300a-d012-4df6-9a5b-e2824f27915b.jpg",
+            "image": "shopify://shop_images/saquon-post.jpg",
+            "profile_image": "shopify://shop_images/saquon-pfp_e626300a-d012-4df6-9a5b-e2824f27915b.jpg",
             "quote": "",
             "instagram_handle": "saquon",
             "size": "medium"
@@ -424,8 +459,8 @@
         "testimonial_q6z4Dt": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brooklyn-beckham-post.jpg",
-            "profile_image": "shopify:\/\/shop_images\/brooklyn-beckham-pfp.jpg",
+            "image": "shopify://shop_images/brooklyn-beckham-post.jpg",
+            "profile_image": "shopify://shop_images/brooklyn-beckham-pfp.jpg",
             "quote": "",
             "instagram_handle": "brooklynpeltzbeckham",
             "size": "medium"
@@ -434,8 +469,8 @@
         "testimonial_bc37z7": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tony-hawk-post.jpg",
-            "profile_image": "shopify:\/\/shop_images\/tony-hawk-pfp.jpg",
+            "image": "shopify://shop_images/tony-hawk-post.jpg",
+            "profile_image": "shopify://shop_images/tony-hawk-pfp.jpg",
             "quote": "",
             "instagram_handle": "tonyhawk",
             "size": "medium"
@@ -455,8 +490,8 @@
     }
   },
   "order": [
+    "marquee_YP4iRf",
     "hero_jVaWmY",
-    "v2_feature_text_PpnfRr",
     "product_list_qU3bEB",
     "about_section_nAHeCe",
     "v2_testimonials_gYMtty"
