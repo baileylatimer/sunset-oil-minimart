@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -7,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<h1>{{ closest.page.title }}<\/h1>",
+            "text": "<h1>{{ closest.page.title }}</h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -57,7 +66,7 @@
         "right_text": false,
         "justify_text": true,
         "small_text": false,
-        "jumbo_text": true
+        "jumbo_text": false
       }
     },
     "hero_6CiyB9": {
@@ -67,7 +76,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<h1>New arrivals<\/h1>",
+            "text": "<h1>New arrivals</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -93,7 +102,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Made with care and unconditionally loved by our customers.<\/p>",
+            "text": "<p>Made with care and unconditionally loved by our customers.</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -121,7 +130,7 @@
           "disabled": true,
           "settings": {
             "label": "Shop Now",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -142,9 +151,9 @@
         "link": "",
         "open_in_new_tab": false,
         "media_type_1": "video",
-        "image_1": "shopify:\/\/shop_images\/hero-temp.jpg",
+        "image_1": "shopify://shop_images/hero-temp.jpg",
         "video_source_1": "file",
-        "video_file_url_1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/62cdf4e00efa4eb8a3f9c5a53e64b9fb.mp4",
+        "video_file_url_1": "https://cdn.shopify.com/videos/c/o/v/62cdf4e00efa4eb8a3f9c5a53e64b9fb.mp4",
         "media_type_2": "image",
         "video_source_2": "upload",
         "video_file_url_2": "",
