@@ -400,7 +400,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Flexible returns</p>",
+                        "text": "<p>Easy returns</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
