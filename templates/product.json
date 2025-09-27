@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -17,7 +26,7 @@
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "right",
             "thumbnail_width": 44,
-            "aspect_ratio": "1\/1.25",
+            "aspect_ratio": "1/1.25",
             "media_radius": 0,
             "extend_media": true,
             "constrain_to_viewport": false,
@@ -98,7 +107,7 @@
                 "text_xrnftG": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>{{ closest.product.title }}<\/h2>",
+                    "text": "<h2>{{ closest.product.title }}</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -309,7 +318,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Reliable shipping<\/p>",
+                        "text": "<p>FREE SHIPPING ON ALL DOMESTIC ORDERS</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -391,7 +400,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Flexible returns<\/p>",
+                        "text": "<p>Flexible returns</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -481,7 +490,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h2>You may also like <\/h2>",
+            "text": "<h2>You may also like </h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
